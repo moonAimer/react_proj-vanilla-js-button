@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla</title>
+    <style>
+      .background-color {
+        color: lawngreen;
+      }
+      .app {
+        text-align: center;
+        font-size: 50px;
+      }
+      .onemoreselector {
+        background-color: chocolate;
+      }
+      .twomoreselector {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <button
+        id="addidforactivatemethod"
+        onclick="onamnenuzhnactobyobernutVnee('addidforactivatemethod')"
+      >
+        click me
+      </button>
+      <button
+        id="addidforactivatemethod2"
+        onclick="onamnenuzhnactobyobernutVnee2 ('addidforactivatemethod2')"
+      >
+        button2
+      </button>
+    </div>
+    <script>
+      function onamnenuzhnactobyobernutVnee(someParametr) {
+        const peremennaya = document.getElementById(someParametr);
+        peremennaya.innerHTML = "кликни меня";
+        peremennaya.className = "onemoreselector background-color";
+      }
+      function onamnenuzhnactobyobernutVnee2(someParametr) {
+        const peremennaya = document.getElementById(someParametr);
+        peremennaya.innerHTML = "новое кликание";
+        peremennaya.className = "twomoreselector";
+      }
+    </script>
+  </body>
+</html>
